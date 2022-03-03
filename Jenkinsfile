@@ -17,5 +17,10 @@ pipeline
         sh 'cat README.md'
       }
     }
+    stage('Read from choice'){
+      steps{
+        sh "cat ${params.FileList}"
+      }
+    }
   }
 }
