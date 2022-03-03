@@ -12,5 +12,10 @@ pipeline
         sh "cat ${params.FileName}"
       }
     }
+    stage('Read README.md file'){
+      steps{
+        sh 'cat README.md'
+      }
+    }
   }
 }
