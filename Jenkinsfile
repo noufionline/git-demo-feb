@@ -7,8 +7,10 @@ pipeline
   }
   
   stages{
-    steps {
-      sh "cat ${params.FileName}"
+    stage('Read demo file'){
+      steps {
+        sh "cat ${params.FileName}"
+      }
     }
   }
 }
